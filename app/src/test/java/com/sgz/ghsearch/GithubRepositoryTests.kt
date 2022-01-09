@@ -25,18 +25,18 @@ class GithubRepositoryTests {
         assert(state.page == 1)
         assert(state.totalResultsCount == 11)
         assert(state.query == "Mock")
-        assert(searchRepository.hasMoreToLoad() == true)
+        assert(searchRepository.hasMoreToLoad())
 
         searchRepository.searchRepositories("Mock")
 
         assert(state.page == 2)
-        assert(searchRepository.hasMoreToLoad() == false)
+        assert(!searchRepository.hasMoreToLoad())
 
         searchRepository.reset()
 
         assert(state.page == 0)
         assert(state.totalResultsCount == 0)
         assert(state.query == null)
-        assert(searchRepository.hasMoreToLoad() == false)
+        assert(!searchRepository.hasMoreToLoad())
     }
 }

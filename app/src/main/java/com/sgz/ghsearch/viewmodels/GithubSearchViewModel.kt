@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sgz.ghsearch.Config
 import com.sgz.ghsearch.models.GitRepository
 import com.sgz.ghsearch.repositories.ISearchRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
