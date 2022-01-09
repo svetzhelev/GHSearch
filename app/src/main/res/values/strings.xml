@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GHSearch</string>
+    <string name="search_hint">Search repositories...</string>
+</resources>
